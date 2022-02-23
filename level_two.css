@@ -1,0 +1,12 @@
+/*
+Directions:
+two rows, each with a height of .5fr. 
+Each row should have 5 columns in it, each with a width of 1fr
+*/
+
+.container
+{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 100px);
+  }

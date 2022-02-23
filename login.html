@@ -1,0 +1,23 @@
+
+<h1>Sample form</h1>
+
+   {% if name != ""%}
+     <h2> Welcome {{name}}</h2>
+   {% else %}
+     <h2>Please log in </h2>
+   {% endif %}
+
+
+<h2>{{error}}</h2>
+  <form method="POST">
+     Enter your name: 
+      <input name="username">
+       <br>
+         Enter password:
+      <input name="password">
+   <button>SUBMIT</button>
+ </form>
+
+   <a href="/">Go Home</a>
+
+<h3>The bottom of the form page</h3>

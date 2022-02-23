@@ -1,0 +1,84 @@
+/*
+resources
+https://www.quackit.com/css/grid/tutorial/create_a_website_layout.cfm
+*/
+
+.container {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: 60px 1fr;
+    grid-gap: 5px;
+    height: 100vh;
+    margin: 0;
+  
+    grid-template-areas: 
+      "nav nav"
+      "side title"
+      "side content"
+      "footer footer";
+  }
+  nav, footer, side, content, title {
+    padding: 20px;
+  }
+  
+  #navbar {
+    grid-area: nav;
+  }
+  
+  #sidebar {
+    grid-area: side;
+  }
+  
+  #content {
+  grid-area:content;
+  height:80vh;
+  
+  }
+  #title {
+  grid-area:title;
+  }
+  
+  #footer {
+  grid-area:footer;
+  }
+
+  /* Other option
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: .4fr .4fr 4fr 1.2fr;
+}
+ 
+#navbar {
+  grid-column: span 5;
+}
+ 
+#sidebar {
+  writing-mode: vertical-rl;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+ 
+#title {
+  grid-column-start: 2;
+  grid-column: span 4;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+ 
+ 
+#content {
+  grid-column-start: 2;
+  grid-column: span 4;
+  grid-row: span 1;
+}
+ 
+#footer {
+  grid-row-start: 4;
+  grid-column: span 5;
+} //Halil
+
+
+*/
